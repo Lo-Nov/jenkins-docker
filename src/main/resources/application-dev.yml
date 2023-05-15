@@ -1,0 +1,57 @@
+spring:
+  redis:
+    host: 10.20.2.12
+    port: 7150
+  datasource:
+    username: wgicheru
+    url: jdbc:mysql://10.20.2.51:3306/cicd
+    password: 1QAZ2wsx3edc.
+  jpa:
+    database: mysql
+    #    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+
+  #Flyway
+  flyway:
+    baselineOnMigrate: true
+    enabled: false
+    schemas: public
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          autoCreateTopics: true
+          brokers: 10.20.2.148:9092
+#      bindings:
+#        handleBCAccountCreation-in-0:
+#          destination: create-blockchain-account-topic
+#          group: create-blockchain-account-group
+#    function:
+#      definition: handleBCAccountCreation;
+
+app:
+  security:
+    keystore-name: authorization.p12
+    keystore-password: Cleo$patra
+    key-alias: ecl-auth
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://10.20.2.148:7772/eureka}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+external:
+  portal: https://google.com
+user:
+  username: admin
+  password: password
+
+demo:
+  send: true

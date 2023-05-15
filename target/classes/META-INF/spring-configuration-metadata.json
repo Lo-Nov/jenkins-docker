@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "channel.portal",
+      "type": "io.eclectics.cicd.config.ChannelManagerConfig",
+      "sourceType": "io.eclectics.cicd.config.ChannelManagerConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "channel.portal.base-url",
+      "type": "java.lang.String",
+      "sourceType": "io.eclectics.cicd.config.ChannelManagerConfig"
+    },
+    {
+      "name": "channel.portal.password",
+      "type": "java.lang.String",
+      "sourceType": "io.eclectics.cicd.config.ChannelManagerConfig"
+    },
+    {
+      "name": "channel.portal.username",
+      "type": "java.lang.String",
+      "sourceType": "io.eclectics.cicd.config.ChannelManagerConfig"
+    }
+  ],
+  "hints": []
+}
