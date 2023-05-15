@@ -1,2 +1,12 @@
 server:
   port: 6666
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: cicd-service
+
+application:
+  title: CICD
+  version: 1.0.0
