@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.eclectics</groupId>
-	<artifactId>cicd</artifactId>
+	<artifactId>accountopening</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cicd</name>
-	<description>ci/cd automation</description>
+	<description>account opening</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.4</spring-cloud.version>

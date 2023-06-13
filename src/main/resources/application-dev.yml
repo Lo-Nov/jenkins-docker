@@ -4,7 +4,7 @@ spring:
     port: 7150
   datasource:
     username: wgicheru
-    url: jdbc:mysql://10.20.2.51:3306/cicd
+    url: jdbc:mysql://10.20.2.51:3306/mb_account_opening
     password: 1QAZ2wsx3edc.
   jpa:
     database: mysql
